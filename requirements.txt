@@ -1,0 +1,35 @@
+# ----------------------------
+# FastAPI framework
+# ----------------------------
+fastapi==0.115.5
+uvicorn[standard]==0.32.1
+
+# ----------------------------
+# Scraping
+# ----------------------------
+newspaper3k==0.2.8
+lxml==5.3.0
+lxml_html_clean==0.1.1
+beautifulsoup4==4.12.3
+requests==2.32.3
+tldextract==5.1.2
+
+# NLP dependency required by newspaper3k
+nltk==3.9.1
+
+# ----------------------------
+# Validation / schemas
+# ----------------------------
+pydantic==2.10.3
+pydantic-settings==2.2.1
+
+# ----------------------------
+# ML / HuggingFace Inference
+# ----------------------------
+transformers==4.46.3
+torch>=2.3.0
+tokenizers>=0.20.0
+accelerate>=0.33.0
+numpy>=1.26.0
+scipy>=1.11.0
+sentencepiece>=0.2.0
