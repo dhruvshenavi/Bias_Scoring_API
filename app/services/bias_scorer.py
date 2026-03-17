@@ -2,6 +2,8 @@ import re
 from app.core.config import settings
 from app.services.model_loader import get_pipeline
 
+zs = get_pipeline()
+
 def compute_bias_score(text: str) -> float:
     """
     Returns a bias score in [-10, +10]:
@@ -12,8 +14,6 @@ def compute_bias_score(text: str) -> float:
     text = re.sub(r"\s+", " ", str(text)).strip()
     if not text:
         return 0.0
-
-    zs = get_pipeline()
 
     out = zs(
         sequences=text,
