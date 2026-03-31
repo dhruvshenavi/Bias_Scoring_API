@@ -9,5 +9,5 @@ class Settings(BaseModel):
     device: int = 0  # auto-set in loader
     hypothesis_template: str = "This text expresses a {} political bias."
     labels: list[str] = ["pro-BJP", "anti-BJP", "pro-Congress", "anti-Congress", "neutral"]
-    hf_token: str = "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"
+    hf_token: str = ""
 settings = Settings()
